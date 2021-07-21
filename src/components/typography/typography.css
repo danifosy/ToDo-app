@@ -1,0 +1,24 @@
+h1 {
+  font-size: 3.92rem;
+  font-weight: var(--fw-primary-bold);
+}
+
+h2 {
+  font-size: 2.67rem;
+  font-weight: var(--fw-primary);
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-secondary);
+}
+
+h5,
+h6 {
+  font-size: 1rem;
+}
