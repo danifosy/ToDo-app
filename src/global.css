@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&family=Roboto:wght@300;500&display=swap");
 
 *,
 *::after,
@@ -11,6 +11,7 @@
   --ff-secondary: "Montserrat", sans-serif;
   --fw-primary: 500;
   --fw-primary-bold: 900;
+  --fw-primary-light: 300;
   --fw-secondary: 600;
   --primary-color: #fe4775;
   --secondary-color: #161060;
