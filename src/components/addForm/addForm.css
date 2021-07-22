@@ -1,7 +1,6 @@
 form {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(4, auto);
+  display: flex;
+  flex-direction: column;
 }
 
 fieldset {
@@ -9,16 +8,16 @@ fieldset {
   justify-content: space-between;
   padding: 1em;
   margin: 2em;
+  border: none;
+  font-weight: var(--fw-primary-light);
 }
 
 #today,
 #tomorrow,
 #choose-date {
-  padding: 1em;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-weight: var(--fw-primary-light);
 }
 
 .description {
@@ -28,7 +27,7 @@ fieldset {
 
 .heading {
   color: var(--text-primary);
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: var(--fw-primary-light);
 }
 
@@ -36,5 +35,22 @@ fieldset {
   background-color: var(--primary-color);
   border: none;
   color: #fff;
-  padding: 2em;
+  padding: 1.5em;
+  font-weight: var(--fw-primary-light);
+  font-size: 1.2em;
+}
+
+.dates {
+  font-size: 0.8em;
+  padding: 1.5em;
+  color: var(--text-primary);
+}
+
+.enterTask {
+  color: var(--content-passive);
+  font-size: 2em;
+  font-weight: var(--fw-primary-light);
+  border: none;
+  text-decoration: underline;
+  margin: 0.5em;
 }
