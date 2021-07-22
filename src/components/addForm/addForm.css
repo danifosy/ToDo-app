@@ -34,7 +34,7 @@ fieldset {
 .addTask {
   background-color: var(--primary-color);
   border: none;
-  color: #fff;
+  color: #ffffff;
   padding: 1.5em;
   font-weight: var(--fw-primary-light);
   font-size: 1.2em;
