@@ -1,4 +1,4 @@
-button {
+.action-button {
   background-color: var(--primary-color);
   width: 8em;
   height: 8em;
