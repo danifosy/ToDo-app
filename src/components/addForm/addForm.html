@@ -1,21 +1,19 @@
 <form>
-  <fieldset>
-    <!--label or legend for description?-->
     <label for="description">DESCRIPTION</label>
     <input
       type="text"
-      name="Enter Task"
+      name="description"
       placeholder="Enter Task"
-      id="addTask"
+      id="description"
     />
   </fieldset>
   <fieldset>
     <legend>WHEN</legend>
-    <input type="radio" name="today" id="today" />
+    <input type="radio" name="date" id="today" />
     <label for="today">TODAY</label>
-    <input type="radio" name="tomorrow" id="tomorrow" />
+    <input type="radio" name="date" id="tomorrow" />
     <label for="today">TOMORROW</label>
-    <input type="radio" name="choose-date" id="choose-date" />
+    <input type="radio" name="date" id="choose-date" />
     <label for="today">CHOOSE DATE</label>
   </fieldset>
   <button type="submit">Add Task</button>

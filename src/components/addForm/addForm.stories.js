@@ -6,4 +6,4 @@ export default {
   parameters: { layout: "fullscreen" },
 };
 
-export const withLogo = () => addForm;
+export const form = () => addForm;
