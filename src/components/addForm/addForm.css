@@ -1,0 +1,40 @@
+form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 2em;
+}
+
+#today,
+#tomorrow,
+#choose-date {
+  padding: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: var(--fw-primary-light);
+}
+
+.description {
+  padding: 1em;
+  font-weight: var(--fw-primary-light);
+}
+
+.heading {
+  color: var(--text-primary);
+  font-size: 0.8em;
+  font-weight: var(--fw-primary-light);
+}
+
+.addTask {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 2em;
+}
