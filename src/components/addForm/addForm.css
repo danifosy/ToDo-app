@@ -1,0 +1,56 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 2em;
+  border: none;
+  font-weight: var(--fw-primary-light);
+}
+
+#today,
+#tomorrow,
+#choose-date {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.description {
+  padding: 1em;
+  font-weight: var(--fw-primary-light);
+}
+
+.heading {
+  color: var(--text-primary);
+  font-size: 0.9em;
+  font-weight: var(--fw-primary-light);
+}
+
+.addTask {
+  background-color: var(--primary-color);
+  border: none;
+  color: #ffffff;
+  padding: 1.5em;
+  font-weight: var(--fw-primary-light);
+  font-size: 1.2em;
+}
+
+.dates {
+  font-size: 0.8em;
+  padding: 1.5em;
+  color: var(--text-primary);
+}
+
+.enterTask {
+  color: var(--content-passive);
+  font-size: 2em;
+  font-weight: var(--fw-primary-light);
+  border: none;
+  text-decoration: underline;
+  margin: 0.5em;
+}
