@@ -18,6 +18,7 @@
   --text-primary: #393939;
   --text-secondary: #111111;
   --content-passive: #d4d4d4;
+  --content-background: hsla(0, 0%, 83%, 0.1);
 }
 
 html {

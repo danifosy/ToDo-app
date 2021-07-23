@@ -1,0 +1,15 @@
+.taskList {
+  background-color: var(--content-background);
+  font-weight: var(--fw-primary-light);
+  display: flex;
+  flex-direction: column;
+}
+
+input[name="task"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  text-decoration-color: var(--primary-color);
+}
