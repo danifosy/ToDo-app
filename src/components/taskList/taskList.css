@@ -1,5 +1,6 @@
 .taskList {
   background-color: var(--content-background);
+  font-weight: var(--fw-primary-light);
   display: flex;
   flex-direction: column;
 }
