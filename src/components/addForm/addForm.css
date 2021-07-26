@@ -5,24 +5,25 @@ form {
 
 fieldset {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1em;
   margin: 2em;
   border: none;
   font-weight: var(--fw-primary-light);
 }
 
-#today,
-#tomorrow,
-#choose-date {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  color: var(--primary-color);
 }
 
 .description {
   padding: 1em;
   font-weight: var(--fw-primary-light);
+  color: var(--text-primary);
 }
 
 .heading {
@@ -44,6 +45,7 @@ fieldset {
   font-size: 0.8em;
   padding: 1.5em;
   color: var(--text-primary);
+  background-color: var(--content-background);
 }
 
 .enterTask {
