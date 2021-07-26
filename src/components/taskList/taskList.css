@@ -1,12 +1,13 @@
 .taskList {
   background-color: var(--content-background);
   font-weight: var(--fw-primary-light);
-  display: flex;
-  flex-direction: column;
+  overflow-y: auto;
 }
 
 input[name="task"] {
-  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 label {

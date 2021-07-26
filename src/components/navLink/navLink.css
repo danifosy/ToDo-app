@@ -4,6 +4,7 @@
   transform: rotate(180deg);
   writing-mode: vertical-lr;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 a {
@@ -12,4 +13,8 @@ a {
   font-weight: var(--fw-primary-light);
   color: var(--content-passive);
   padding: 2em;
+}
+
+.filter-nav-link__active {
+  color: var(--primary-color);
 }
