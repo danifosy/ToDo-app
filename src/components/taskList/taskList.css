@@ -3,6 +3,7 @@
   font-weight: var(--fw-primary-light);
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 
 input[name="task"] {
