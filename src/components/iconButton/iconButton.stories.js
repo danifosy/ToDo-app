@@ -4,7 +4,7 @@ import iconButtonBell from "./iconButton-bell.html";
 
 export default {
   title: "Components/IconButton",
-  parameters: { layout: "fullscreen" },
+  parameters: { layout: "centered" },
 };
 
 export const Menu = () => iconButtonMenu;
