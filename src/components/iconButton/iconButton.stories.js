@@ -1,8 +1,8 @@
 import "./iconButton.css";
-import iconButton from "./iconButton.html";
+import iconButton from "./iconButton-menu.html";
 
 export default {
-  title: "Components/Form",
+  title: "Components/IconButton",
   parameters: { layout: "fullscreen" },
 };
 
