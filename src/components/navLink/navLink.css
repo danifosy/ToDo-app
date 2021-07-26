@@ -14,3 +14,7 @@ a {
   color: var(--content-passive);
   padding: 2em;
 }
+
+.filter-nav-link__active {
+  color: var(--primary-color);
+}
