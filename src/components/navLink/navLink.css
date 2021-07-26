@@ -4,6 +4,7 @@
   transform: rotate(180deg);
   writing-mode: vertical-lr;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 a {
