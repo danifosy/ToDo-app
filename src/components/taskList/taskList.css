@@ -2,6 +2,8 @@
   background-color: var(--content-background);
   font-weight: var(--fw-primary-light);
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 input[name="task"] {
