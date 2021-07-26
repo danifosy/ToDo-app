@@ -9,7 +9,11 @@ input[name="task"] {
   display: none;
 }
 
+label {
+  padding: 0.75em;
+}
 input[type="checkbox"]:checked + label {
   text-decoration: line-through;
   text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 0.14em;
 }
