@@ -7,5 +7,27 @@
     <title>new task</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Add New</h1>
+    <form>
+      <label for="description" class="heading description">DESCRIPTION</label>
+      <input
+        type="text"
+        name="description"
+        placeholder="Enter Task"
+        id="description"
+        class="enterTask"
+      />
+      <fieldset>
+        <legend class="heading">WHEN</legend>
+        <input type="radio" name="date" id="today" />
+        <label for="today" class="dates">TODAY</label>
+        <input type="radio" name="date" id="tomorrow" />
+        <label for="tomorrow" class="dates">TOMORROW</label>
+        <input type="radio" name="date" id="chooseDate" />
+        <label for="chooseDate" class="dates">CHOOSE DATE</label>
+      </fieldset>
+      <button type="submit" class="addTask">Add Task</button>
+    </form>
+  </body>
 </html>
