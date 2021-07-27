@@ -39,6 +39,9 @@ header {
 
 h1 {
   grid-row: 2/2;
+  grid-column: 1/2;
+  font-weight: var(--fw-primary-light);
+  font-size: 2.5em;
 }
 
 .iconButton {
@@ -53,25 +56,25 @@ h1 {
 
 .iconButtonBell {
   grid-row: 2/3;
+  justify-self: end;
 }
 
 .filter-nav {
-  display: flex;
-  flex-direction: row;
-  transform: rotate(180deg);
-  writing-mode: vertical-lr;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  grid-column: 1/1;
-  grid-row: 2/5;
+  display: grid;
+  grid-column: 1/2;
+  grid-row: span 2;
+  place-items: center;
 }
 
-a {
+.filter-nav-link {
   text-decoration: none;
   font-size: 0.8em;
   font-weight: var(--fw-primary-light);
   color: var(--content-passive);
-  padding: 2em;
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .filter-nav-link__active {
@@ -81,10 +84,12 @@ a {
 .taskList {
   background-color: var(--content-background);
   font-weight: var(--fw-primary-light);
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  grid-row: 3/-1;
+  grid-column: 2/3;
+  grid-row: span 2;
+  overflow: auto;
+  padding-left: 1em;
+  padding-top: 4em;
+  background-color: var(--clr-content-passive);
 }
 
 input[name="task"] {
