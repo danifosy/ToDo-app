@@ -89,22 +89,23 @@ h1 {
   overflow: auto;
   padding-left: 1em;
   padding-top: 4em;
-  background-color: var(--clr-content-passive);
+}
+/* Copied from Philipp due to time, check later */
+
+.taskItem {
+  display: block;
+  margin-bottom: 2em;
+  font-size: 1.4em;
 }
 
-input[name="task"] {
+.taskItem__checkbox {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-label {
-  padding: 0.75em;
-}
-input[type="checkbox"]:checked + label {
-  text-decoration: line-through;
-  text-decoration-color: var(--primary-color);
-  text-decoration-thickness: 0.14em;
+.taskItem__checkbox:checked + .taskItem__labelText {
+  text-decoration: line-through 0.14em var(--primary-color);
 }
 
 .action-button {

@@ -17,19 +17,32 @@
         <img src="assets/bell.svg" alt="" />
       </button>
       <nav class="filter-nav">
-        <a href="" class="filter-nav-link"> this week </a>
-        <a href="" class="filter-nav-link"> tomorrow </a>
         <a href="" class="filter-nav-link"> today </a>
+        <a href="" class="filter-nav-link"> tomorrow </a>
+        <a href="" class="filter-nav-link"> this week </a>
       </nav>
+      <!--copied task items from Philipp due to time, check later-->
       <section class="taskList">
-        <input type="checkbox" id="firstTask" name="task" />
-        <label for="firstTask">Book appointment with Jared</label>
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
 
-        <input type="checkbox" id="secondTask" name="task" />
-        <label for="secondTask">Upload today shot on Dribble</label>
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Upload today shot on Dribble</span
+          >
+        </label>
 
-        <input type="checkbox" id="thirdTask" name="task" />
-        <label for="thirdTask">Complete the Elephant Illustration</label>
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Complete the Elephant illustration</span
+          >
+        </label>
       </section>
       <button class="action-button">
         <img src="../../assets/plus.svg" alt="add new task" />
