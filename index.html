@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <main class="container">
+      <button aria-label="open menu" class="iconButton iconButtonMenu">
+        <img src="/assets/menu.svg" alt="" />
+      </button>
+      <h1>Task</h1>
+      <button aria-label="open notifications" class="iconButton iconButtonBell">
+        <img src="assets/bell.svg" alt="" />
+      </button>
+      <nav class="filter-nav">
+        <a href="" class="filter-nav-link"> today </a>
+        <a href="" class="filter-nav-link"> tomorrow </a>
+        <a href="" class="filter-nav-link"> this week </a>
+      </nav>
+      <!--copied task items from Philipp due to time, check later-->
+      <section class="taskList">
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
+
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Upload today shot on Dribble</span
+          >
+        </label>
+
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Complete the Elephant illustration</span
+          >
+        </label>
+      </section>
+      <button class="action-button">
+        <img src="../../assets/plus.svg" alt="add new task" />
+      </button>
+    </main>
+  </body>
+</html>

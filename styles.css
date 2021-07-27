@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Montserrat", sans-serif;
+  --fw-primary: 500;
+  --fw-primary-bold: 900;
+  --fw-primary-light: 300;
+  --fw-secondary: 600;
+  --primary-color: #fe4775;
+  --secondary-color: #161060;
+  --text-primary: #393939;
+  --text-secondary: #111111;
+  --content-passive: #d4d4d4;
+  --content-background: hsla(0, 0%, 83%, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: var(--ff-primary);
+}
+
+header {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr 4fr 1fr;
+}
+
+h1 {
+  grid-row: 2/2;
+  grid-column: 1/2;
+  font-weight: var(--fw-primary-light);
+  font-size: 2.5em;
+  padding-left: 0.3em;
+}
+
+.iconButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.iconButtonMenu {
+  grid-column: 1/1;
+}
+
+.iconButtonBell {
+  grid-row: 2/3;
+  justify-self: end;
+  padding-right: 2em;
+}
+
+.filter-nav {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: span 2;
+  place-items: center;
+}
+
+.filter-nav-link {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: var(--fw-primary-light);
+  color: var(--content-passive);
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.filter-nav-link__active {
+  color: var(--primary-color);
+}
+
+.taskList {
+  background-color: var(--content-background);
+  font-weight: var(--fw-primary-light);
+  grid-column: 2/3;
+  grid-row: span 2;
+  overflow: auto;
+  padding-left: 1em;
+  padding-top: 4em;
+}
+
+/* Copied from Philipp due to time, check later */
+
+.taskItem {
+  display: block;
+  margin-bottom: 2em;
+  font-size: 1.4em;
+}
+
+.taskItem__checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+.taskItem__checkbox:checked + .taskItem__labelText {
+  text-decoration: line-through 0.14em var(--primary-color);
+}
+
+.action-button {
+  background-color: var(--primary-color);
+  width: 8em;
+  height: 8em;
+  border-radius: 1em 0 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: none;
+}
