@@ -104,6 +104,7 @@ h1 {
   opacity: 0;
   width: 0;
   height: 0;
+  margin: 0;
 }
 
 .taskItem__checkbox:checked + .taskItem__labelText {
