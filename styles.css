@@ -123,62 +123,81 @@ h1 {
   border: none;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.newTask_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  height: 100vh;
 }
 
-fieldset {
-  display: flex;
-  justify-content: space-around;
-  padding: 1em;
-  margin: 2em;
+.newTask__header {
+  grid-row: 1/1;
+  align-self: center;
+}
+
+.addTaskForm {
+  grid-row: 2/2;
+}
+
+.addTaskForm__userInput {
+  margin-left: 1.5em;
+  align-items: stretch;
+}
+
+.addTaskForm__description {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 0;
+}
+
+.addTaskForm__textInput {
+  font-size: 2rem;
+  padding: 0.5em 0.3em 0.5em 0.1em;
+  max-width: 100%;
   border: none;
-  font-weight: var(--fw-primary-light);
+  border-bottom: 0.1em solid var(--content-passive);
 }
 
-input[type="radio"] {
-  display: none;
+.addTaskForm__textInput::placeholder {
+  color: var(--content-passive);
 }
 
-input[type="radio"]:checked + label {
+.addTaskForm__fieldset {
+  border: none;
+  padding: 0;
+  margin: 3em 0 0 0;
+}
+
+.addTaskForm__radioGroup {
+  border: none;
+  background-color: var(--content-background);
+  margin-top: 1em;
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  /* width: fit-content; */
+}
+
+.addTaskForm__radio {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.addTaskForm__radio:checked + .addTaskForm__radioLabel {
   color: var(--primary-color);
 }
 
-.description {
-  padding: 1em;
-  font-weight: var(--fw-primary-light);
-  color: var(--text-primary);
-}
-
-.heading {
-  color: var(--text-primary);
-  font-size: 0.9em;
-  font-weight: var(--fw-primary-light);
-}
-
-.addTask {
+.addTaskForm__submit {
+  font-size: 1.2rem;
+  border: none;
+  width: 100%;
+  padding: 2rem;
   background-color: var(--primary-color);
-  border: none;
   color: #ffffff;
-  padding: 1.5em;
-  font-weight: var(--fw-primary-light);
-  font-size: 1.2em;
-}
-
-.dates {
-  font-size: 0.8em;
-  padding: 1.5em;
-  color: var(--text-primary);
-  background-color: var(--content-background);
-}
-
-.enterTask {
-  color: var(--content-passive);
-  font-size: 2em;
-  font-weight: var(--fw-primary-light);
-  border: none;
-  text-decoration: underline;
-  margin: 0.5em;
+  position: absolute;
+  bottom: 0;
 }
