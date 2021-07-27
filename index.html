@@ -8,7 +8,7 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <button aria-label="open menu" class="iconButton">
         <img src="/assets/menu.svg" alt="" />
       </button>
@@ -16,6 +16,21 @@
       <button aria-label="open notifications" class="iconButton">
         <img src="assets/bell.svg" alt="" />
       </button>
-    </div>
+      <nav class="filter-nav">
+        <a href="" class="filter-nav-link"> this week </a>
+        <a href="" class="filter-nav-link"> tomorrow </a>
+        <a href="" class="filter-nav-link"> today </a>
+      </nav>
+      <section class="taskList">
+        <input type="checkbox" id="firstTask" name="task" />
+        <label for="firstTask">Book appointment with Jared</label>
+
+        <input type="checkbox" id="secondTask" name="task" />
+        <label for="secondTask">Upload today shot on Dribble</label>
+
+        <input type="checkbox" id="thirdTask" name="task" />
+        <label for="thirdTask">Complete the Elephant Illustration</label>
+      </section>
+    </main>
   </body>
 </html>
