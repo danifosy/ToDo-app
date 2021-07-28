@@ -8,5 +8,5 @@ addTaskForm.onsubmit = function (event) {
   newTask.title = taskFormInput.value;
   newTask.date = taskFormRadio.value;
 
-  console.log(taskFormValue, taskFormDate);
+  console.log(newTask.title, newTask.date);
 };
