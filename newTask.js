@@ -4,7 +4,9 @@ const taskFormInput = document.querySelector(".addTaskForm__textInput");
 addTaskForm.onsubmit = function (event) {
   event.preventDefault();
   const taskFormRadio = document.querySelector(".addTaskForm__radio:checked");
-  const taskFormValue = taskFormInput.value;
-  const taskFormDate = taskFormRadio.value;
+  const newTask = { title: "", date: "", isDone: false };
+  newTask.title = taskFormInput.value;
+  newTask.date = taskFormRadio.value;
+
   console.log(taskFormValue, taskFormDate);
 };
