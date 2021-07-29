@@ -1,8 +1,20 @@
-const newTaskObj = {
-  title: "Play Zelda until dawn. Or maybe don't...",
-  date: "tomorrow",
-  isDone: true,
-};
+const tasks = [
+  {
+    title: "Play Zelda until dawn. Or maybe don't...",
+    date: "tomorrow",
+    isDone: true,
+  },
+  {
+    title: "Play Zelda until dawn. Or maybe don't...",
+    date: "tomorrow",
+    isDone: true,
+  },
+  {
+    title: "Play Zelda until dawn. Or maybe don't...",
+    date: "tomorrow",
+    isDone: true,
+  },
+];
 
 const taskList = document.querySelector(".taskList");
 
