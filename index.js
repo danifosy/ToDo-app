@@ -1,11 +1,3 @@
-const menuButton = document.querySelector(".iconButtonMenu");
-
-menuButton.onclick = sendAlert;
-
-function sendAlert() {
-  alert("Hello World!");
-}
-
 const newTaskObj = {
   title: "Play Zelda until dawn. Or maybe don't...",
   date: "tomorrow",
