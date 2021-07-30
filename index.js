@@ -1,58 +1,61 @@
-const menuButton = document.querySelector(".iconButtonMenu");
+import { ReadLocalStorage, WriteLocalStorage } from "./utils/localStorage.js";
 
-menuButton.onclick = sendAlert;
-//menuButton.onclick = createTaskListItem;
+// creates array with objects
+/* const tasks = [
+  {
+    title: "Play Zelda until dawn. Or maybe don't...",
+    date: "tomorrow",
+    isDone: true,
+  },
+  {
+    title: "Build new desk",
+    date: "today",
+    isDone: false,
+  },
+  {
+    title: "Go to gym in the morning",
+    date: "tomorrow",
+    isDone: false,
+  },
+]; */
 
-function sendAlert() {
-  alert("Hello World!");
-}
-
+// selects the tasklist
 const taskList = document.querySelector(".taskList");
 
-const newTask = document.createElement("p");
-newTask.innerText = "Example Task";
+const tasks = ReadLocalStorage("task", []);
 
-taskList.append(newTask);
+//console.log(tasks);
 
-const taskOne = createTaskListItem("Cook coffee");
+// creates variable in which the result of the function is saved
+// .map creates new array
+const taskItem = tasks.map((task) => createTaskListItem(task));
 
-taskList.append(taskOne);
+// shows the function in browser
+taskList.append(...taskItem);
 
-//function createTaskListItem() {
-//const taskListItem = document.createElement("label");
-//taskListItem.className = "taskItem";
-
-//const taskInputItem = document.createElement("input");
-//taskInputItem.className = "taskItem__checkbox";
-//taskInputItem.type = "checkbox";
-//taskListItem.appendChild(taskInputItem);
-
-//const taskSpanItem = document.createElement("span");
-//taskSpanItem.className = "taskItem__labelText";
-
-//taskSpanItem.innerText =
-//  "Learn JS even though it's fucking hard and I hate math.";
-//taskListItem.appendChild(taskSpanItem);
-
-//taskList.append(taskListItem);
-//return taskListItem;
-//}
-
-function createTaskListItem(taskName) {
+// function that creates the label
+function createTaskListItem(task) {
+  // creates new html elements and saves them in variable
   const taskListItem = document.createElement("label");
   const input = document.createElement("input");
   const span = document.createElement("span");
 
+  //sets the label class
   taskListItem.className = "taskItem";
 
+  //sets attribute and type to the input
   input.className = "taskItem__checkbox";
   input.type = "checkbox";
+  input.checked = task.isDone;
   input.setAttribute("name", "tasks");
 
+  // sets class and text according to is in the array
   span.className = "taskItem__labelText";
-  span.innerText = taskName;
+  span.innerText = task.title;
 
+  // puts the input and span inside the label
   taskListItem.append(input, span);
 
+  // returns the result
   return taskListItem;
 }
