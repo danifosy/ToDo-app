@@ -16,4 +16,5 @@ addTaskForm.onsubmit = function (event) {
 
   // creates key and item in LS
   WriteLocalStorage("task", tasks);
+  location.href = "index.html";
 };
