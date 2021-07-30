@@ -59,3 +59,11 @@ function createTaskListItem(task) {
   // returns the result
   return taskListItem;
 }
+
+const dateSelector = document.querySelector("filter-nav");
+const date = document.querySelector("filter-nav-link_button");
+
+dateSelector.onclick = function dateList(taskListItem) {
+  const today = taskListItem.filter((today) => dateSelector === "today");
+  return today;
+};

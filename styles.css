@@ -86,7 +86,7 @@ h1 {
   margin: 0;
 }
 
-.filter-nav-link__active {
+.filter-nav-link_button:checked + span {
   color: var(--primary-color);
 }
 
