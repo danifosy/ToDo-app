@@ -10,6 +10,10 @@ addTaskForm.onsubmit = function (event) {
   newTask.title = taskFormInput.value;
   newTask.date = taskFormRadio.value;
 
+  const tasks = ReadLocalStorage("task", []);
+
+  tasks.push(newTask);
+
   // creates key and item in LS
-  WriteLocalStorage("task", [newTask]);
+  WriteLocalStorage("task", tasks);
 };

@@ -18,5 +18,3 @@ export function WriteLocalStorage(key, value) {
 
   localStorage.setItem(key, CodeData);
 }
-
-ReadLocalStorage("task", "sleep");
