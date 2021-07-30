@@ -1,3 +1,5 @@
+import { ReadLocalStorage, WriteLocalStorage } from "./utils/localStorage.js";
+
 // creates array with objects
 const tasks = [
   {

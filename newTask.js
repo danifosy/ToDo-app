@@ -1,3 +1,5 @@
+import { ReadLocalStorage, WriteLocalStorage } from "./utils/localStorage.js";
+
 const addTaskForm = document.querySelector(".addTaskForm");
 const taskFormInput = document.querySelector(".addTaskForm__textInput");
 
