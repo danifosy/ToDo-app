@@ -1,7 +1,7 @@
 import { ReadLocalStorage, WriteLocalStorage } from "./utils/localStorage.js";
 
 // creates array with objects
-const tasks = [
+/* const tasks = [
   {
     title: "Play Zelda until dawn. Or maybe don't...",
     date: "tomorrow",
@@ -17,10 +17,14 @@ const tasks = [
     date: "tomorrow",
     isDone: false,
   },
-];
+]; */
 
 // selects the tasklist
 const taskList = document.querySelector(".taskList");
+
+const tasks = ReadLocalStorage("task", []);
+
+console.log(tasks);
 
 // creates variable in which the result of the function is saved
 // .map creates new array
