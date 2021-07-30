@@ -10,11 +10,14 @@ addTaskForm.onsubmit = function (event) {
   newTask.title = taskFormInput.value;
   newTask.date = taskFormRadio.value;
 
-  const tasks = ReadLocalStorage("task", []);
+  // code only runs if the Enter Task is not empty
+  if (newTask.title !== "") {
+    const oldTasks = ReadLocalStorage("task", []);
 
-  tasks.push(newTask);
+    oldTasks.push(newTask);
 
-  // creates key and item in LS
-  WriteLocalStorage("task", tasks);
-  location.href = "index.html";
+    // creates key and item in LS
+    WriteLocalStorage("task", oldTasks);
+    location.href = "index.html";
+  }
 };
