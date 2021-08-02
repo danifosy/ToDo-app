@@ -24,8 +24,6 @@ const taskList = document.querySelector(".taskList");
 
 const tasks = ReadLocalStorage("task", []);
 
-//console.log(tasks);
-
 // creates variable in which the result of the function is saved
 // .map creates new array
 const taskItem = tasks.map((task) => createTaskListItem(task));
