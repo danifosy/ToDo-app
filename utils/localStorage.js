@@ -1,4 +1,4 @@
-// Retrieves the key and the value from the local storage
+// Retrieves the value belonging to a key from the local storage
 export function ReadLocalStorage(key, defaultValue) {
   const storageItem = localStorage.getItem(key);
 

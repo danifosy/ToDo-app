@@ -16,11 +16,43 @@
       <button aria-label="open notifications" class="iconButton iconButtonBell">
         <img src="assets/bell.svg" alt="" />
       </button>
-      <nav class="filter-nav">
-        <a href="" class="filter-nav-link"> today </a>
+      <div class="filter-nav">
+        <label>
+          <input
+            type="radio"
+            name="dateSelector"
+            value="today"
+            id="today"
+            class="filter-nav-link_button"
+          />
+          <span class="filter-nav-link">Today</span>
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="dateSelector"
+            value="tomorrow"
+            id="tomorrow"
+            class="filter-nav-link_button"
+          />
+          <span class="filter-nav-link">Tomorrow</span>
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="dateSelector"
+            value="thisWeek"
+            id="thisWeek"
+            class="filter-nav-link_button"
+          />
+          <span class="filter-nav-link">This Week</span>
+        </label>
+      </div>
+      <!-- <nav class="filter-nav">
+        <a href="" class="filter-nav-link"> dateSelector </a>
         <a href="" class="filter-nav-link"> tomorrow </a>
         <a href="" class="filter-nav-link"> this week </a>
-      </nav>
+      </nav> -->
       <!--copied task items from Philipp due to time, check later-->
       <section class="taskList">
         <!--<label class="taskItem">
@@ -31,7 +63,7 @@
         <label class="taskItem">
           <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
             class="taskItem__labelText"
-            >Upload today shot on Dribble</span
+            >Upload dateSelector shot on Dribble</span
           >
         </label>
 
@@ -43,7 +75,9 @@
         </label> -->
       </section>
       <button class="action-button">
-        <img src="../../assets/plus.svg" alt="add new task" />
+        <a href="newTask.html"
+          ><img src="../../assets/plus.svg" alt="add new task"
+        /></a>
       </button>
     </main>
     <script type="module" src="index.js" defer="true"></script>
